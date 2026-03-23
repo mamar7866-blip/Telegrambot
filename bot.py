@@ -4,7 +4,7 @@ import sqlite3
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, filters, ContextTypes
 
-TOKEN = "8753874001:AAEMtlNKeXqIBgPy2cG9YhDue3L5TcWTeJQ"
+TOKEN =  os.getenv("8753874001:AAEMtlNKeXqIBgPy2cG9YhDue3L5TcWTeJQ")
 
 conn = sqlite3.connect("users.db", check_same_thread=False)
 cursor = conn.cursor()
